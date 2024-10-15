@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: products-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/products-db
+    username: postgres
+    password: 12345
+
+server:
+  servlet:
+    context-path: /api
+  port: 8080
