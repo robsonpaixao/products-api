@@ -11,3 +11,10 @@ services:
       - ./db:/var/lib/postgresql/data
     ports:
       - "5432:5432"
+
+  redis:
+    image: redis:7.0
+    container_name: products-redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
